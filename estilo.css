@@ -1,0 +1,504 @@
+/* =========================================
+   ESTILOS GENERALES
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f8f4;
+    color: #26352b;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+header {
+    background-color: #194c3d;
+    color: rgb(219, 187, 187);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 50px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   MENÚ
+   ========================================= */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 8px 12px;
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #0e4d29;
+}
+
+
+/* =========================================
+   CONTENIDO PRINCIPAL
+   ========================================= */
+
+main {
+    min-height: 70vh;
+}
+
+
+/* =========================================
+   SECCIONES DE CONTENIDO
+   ========================================= */
+
+.contenido {
+    max-width: 1100px;
+
+    margin: 40px auto 20px;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.contenido h1 {
+    color: #176b3a;
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.contenido h2 {
+    color: #176b3a;
+
+    margin-bottom: 15px;
+}
+
+.contenido p {
+    font-size: 18px;
+
+    max-width: 900px;
+
+    margin: 0 auto 15px;
+}
+
+
+/* =========================================
+   PÁGINA DE INICIO
+   ========================================= */
+
+.hero {
+    min-height: 450px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px;
+
+    color: white;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 70, 35, 0.60),
+            rgba(0, 70, 35, 0.60)
+        ),
+        url("imagen/fondo.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* TÍTULO DEL INICIO */
+
+.hero h1 {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+/* TEXTO DEL INICIO */
+
+.hero p {
+    max-width: 850px;
+
+    font-size: 23px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   BOTONES
+   ========================================= */
+
+.boton {
+    display: inline-block;
+
+    background-color: #ffffff;
+
+    color: #176b3a;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #dff2e5;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   IMAGEN DE LA PÁGINA DE INICIO
+   ========================================= */
+
+.imagen {
+    display: block;
+
+    width: 70%;
+    max-width: 700px;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    margin: 25px auto;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   TARJETAS DEL INDEX
+   ========================================= */
+
+.tarjetas {
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.tarjeta {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta h3 {
+    color: #176b3a;
+
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    text-align: justify;
+}
+
+
+/* =========================================
+   TIPOS DE CONTAMINACIÓN
+   ========================================= */
+
+.tipos-contaminacion {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 20px 20px 60px;
+}
+
+
+/* CUADROS DE LOS TIPOS */
+
+.tipo-contaminacion {
+    background-color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-bottom: 35px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tipo-contaminacion:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* IMÁGENES DE LOS TIPOS */
+
+.tipo-contaminacion img {
+    width: 320px;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    flex-shrink: 0;
+}
+
+
+/* TEXTO DE CADA TIPO */
+
+.tipo-texto {
+    flex: 1;
+}
+
+.tipo-texto h2 {
+    color: #176b3a;
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+.tipo-texto p {
+    font-size: 16px;
+
+    margin-bottom: 12px;
+
+    text-align: justify;
+}
+
+
+/* =========================================
+   CUADROS DE SOLUCIONES
+   ========================================= */
+
+.soluciones {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 20px 20px 60px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.solucion {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.solucion:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.solucion h2 {
+    color: #176b3a;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.solucion p {
+    font-size: 16px;
+
+    margin-bottom: 12px;
+
+    text-align: justify;
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+   ========================================= */
+
+footer {
+    background-color: #123d27;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =========================================
+   DISEÑO PARA CELULAR
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+    .logo {
+        text-align: center;
+
+        font-size: 20px;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+
+    .contenido h1 {
+        font-size: 32px;
+    }
+
+    .hero {
+        min-height: 400px;
+
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 19px;
+    }
+
+    /* Imagen de inicio en celular */
+    .imagen {
+        width: 100%;
+        max-width: 600px;
+        height: 230px;
+    }
+
+    .tipo-contaminacion {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .tipo-contaminacion img {
+        width: 100%;
+
+        max-width: 500px;
+
+        height: 230px;
+    }
+
+    .tipo-texto p {
+        text-align: left;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .soluciones {
+        grid-template-columns: 1fr;
+
+        padding: 20px;
+    }
+}
